@@ -9,6 +9,6 @@ class Solution {
        
        m1=Math.min(m1,m);
     }
-    return (double)m1;
+    return m1;
     }
 }
