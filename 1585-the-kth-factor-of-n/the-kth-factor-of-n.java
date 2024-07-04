@@ -9,13 +9,10 @@ class Solution {
             a.add(i);
         }
     }
-    int arr[]=new int[a.size()];
-    for(int i=0;i<a.size();i++)
+    if(a.size()>=k)
     {
-        arr[i]=a.get(i);
-    }
-    if(arr.length>=k)
-     return arr[k-1];
+        return a.get(k-1);
+    }    
     return -1;
     }
 }
