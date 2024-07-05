@@ -1,6 +1,6 @@
 class Solution {
     public String modifyString(String s) {
-        if (s == null || s.isEmpty()) return "";
+        
     
     char[] chars = s.toCharArray();
     for (int i=0; i<chars.length; i++) {
