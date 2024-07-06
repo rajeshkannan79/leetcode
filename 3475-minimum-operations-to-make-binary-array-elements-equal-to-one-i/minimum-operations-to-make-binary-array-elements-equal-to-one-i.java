@@ -1,9 +1,9 @@
 class Solution {
     public int minOperations(int[] nums) {
        
-     
+     int i=0;
      int c=0;
-     for(int i=0;i<nums.length-2;i++)
+     for(;i<nums.length-2;i++)
      {int j=i+1;
      int k=i+2;
         if(nums[i]==0)
@@ -13,7 +13,7 @@ class Solution {
             c++;
         }
      }
-     for(int i=0;i<nums.length;i++){
+     for(i=0;i<nums.length;i++){
      int f=nums[i]^1;   
      if(f!=0)
        return -1;
