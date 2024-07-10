@@ -7,10 +7,12 @@ class Solution {
          {
             StringBuilder x = new StringBuilder(a[i]);
             sb.append(x.reverse().toString());
-            if(i!=n-1)
-            {
-                sb.append(" ");
+            if(i==n-1)
+            { break;
             }
+            else
+                sb.append(" ");
+            
          }
          return sb.toString();
     }
