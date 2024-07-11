@@ -9,6 +9,8 @@ class Solution {
             }
         }
 
-        return Integer.parseInt(s.toString());
+       String v=s.toString();
+       int t=Integer.valueOf(v);
+       return t;
     }
 }
