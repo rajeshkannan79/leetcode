@@ -1,12 +1,11 @@
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
-       for(char ch:letters)
-       {
-        int b=ch-'a';
-        int g=target-'a';
-        if(b>g)
-          return ch;
-       } 
-       return letters[0];
+        for (char letter : letters) {
+            if (letter > target) {
+                return letter;
+            }
+        }
+        
+        return letters[0];
     }
 }
