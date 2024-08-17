@@ -6,7 +6,7 @@ class Solution {
             arr[i]=i+1;
             sum = sum +arr[i];
         }
-            arr[n-1]=(-(sum));
+            arr[n-1]=-sum;
 
     
         return arr;
