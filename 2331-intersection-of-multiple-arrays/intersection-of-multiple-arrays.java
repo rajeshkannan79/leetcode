@@ -4,8 +4,9 @@ class Solution {
 
         for(int []list:nums)
         {
-
+            Set<Integer> hs=new HashSet<>();
         for(int num:list){
+                if(hs.add(num)){
                 if(hm.containsKey(num))
                 {
              hm.put(num,hm.get(num)+1);
@@ -15,6 +16,7 @@ class Solution {
                     hm.put(num,1);
                 }
             }
+        }
         }
         ArrayList<Integer> al=new ArrayList<>();
         for(int g:hm.keySet())
