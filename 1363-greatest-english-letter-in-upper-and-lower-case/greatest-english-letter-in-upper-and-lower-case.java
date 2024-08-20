@@ -1,27 +1,15 @@
 class Solution {
     public String greatestLetter(String s) {
-        int arr[]=new int[26];
-        int arr1[]=new int[26];
-        for(int i=0;i<s.length();i++)
-        {
-            if(s.charAt(i)>='a'&&s.charAt(i)<='z')
+            for(char c='Z';c>='A';c--)
             {
-                arr[s.charAt(i)-'a']++;
+                String s1=Character.toString(c);
+                String c1=Character.toString(c+32);
+                if(s.contains(s1)&&s.contains(c1))
+                {
+                    return s1;
+                }
             }
-            else
-            {  arr1[s.charAt(i)-'A']++;  
-            }
-        }
-        int max=-1;
-        for(int i=0;i<26;i++)
-        {
-            if(arr[i]!=0 && arr1[i]!=0)
-            {
-                max=i;
-            }
-        }
-        if(max==-1)  return "";
-        return (char)(max+65)+"";
-                                                                                                                                                                                         
+            return "";
     }
+             
 }
