@@ -7,7 +7,7 @@ class Solution {
     for(int i=0;i<n.length();i++)
             {if(n.charAt(i)>='0' && n.charAt(i)<='9')
                 {int v=n.charAt(i)-'0';
-                    n.deleteCharAt(i);
+                n.deleteCharAt(i);
                   m[v-1]=n.toString();}} }
         String l="";
         for(int i=0;i<m.length;i++)
