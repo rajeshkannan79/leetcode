@@ -5,7 +5,7 @@ class Solution {
             if(s.charAt(i) == letter)
                 count++;
         }
-        System.out.println(count);
+      
         return (count*100)/s.length();
     }
 }
