@@ -3,10 +3,10 @@
  * @return {number}
  */
 var singleNumber = function(nums) {
-   let c=0;
-   for(let i=0;i<nums.length;i++)
+   var c1=0;
+   for(let c of nums)
    {
-    c^=nums[i];
+    c1^=c;
    } 
-   return c;
+   return c1;
 };
