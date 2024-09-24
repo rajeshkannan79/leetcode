@@ -18,7 +18,7 @@ class Solution {
         {
             if(hm.get(i)>a){
               b=i;
-              break;
+              
             }
         }
         return b;
