@@ -3,8 +3,7 @@ class Solution {
         int arr[]=new int[2];
         int even=0;
         int odd=0;
-        if(n==50) return new int[]{1,2};
-        if(n==2) return new int[]{0,1};
+       
         String s=Integer.toBinaryString(n);
         String d="";
         for(int i=s.length()-1;i>=0;i--)
