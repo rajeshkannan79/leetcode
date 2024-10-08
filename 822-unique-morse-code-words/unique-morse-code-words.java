@@ -30,7 +30,6 @@ class Solution {
       hm.put('y',"-.--");
       hm.put('z',"--..");
        int j=0;
-       String str[]=new String[words.length];
        ArrayList<String> al=new ArrayList<>();
        for(String s:words)
        {
