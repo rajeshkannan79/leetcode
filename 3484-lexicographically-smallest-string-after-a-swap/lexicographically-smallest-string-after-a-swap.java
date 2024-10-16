@@ -1,20 +1,22 @@
 class Solution {
     public String getSmallestString(String s) {
-        int n = s.length();
-        StringBuilder str = new StringBuilder(s);
-        for(int i=0;i<n-1;i++){
-            int a=Character.getNumericValue(str.charAt(i));
-            int b=Character.getNumericValue(str.charAt(i+1));
-            if((a%2==0 && b%2==0) || (a%2!=0 && b%2!=0)){
+        char[]c=s.toCharArray();
+        for(int i=0;i<s.length()-1;i++)
+        {
+
+            int a=Integer.parseInt(String.valueOf(s.charAt(i)));
+            int b=Integer.parseInt(String.valueOf(s.charAt(i+1)));
+            
+            if(a%2==0&&b%2==0||a%2==1&&b%2==1)
+            {
                 if(a>b){
-                    char c1 = str.charAt(i);
-                    char c2 = str.charAt(i+1);
-                    str.setCharAt(i,c2);
-                    str.setCharAt(i+1,c1);
-                    break;
-                }
+                char temp=c[i];
+                c[i]=c[i+1];
+                c[i+1]=temp;
+                break;
+            }
             }
         }
-        return str.toString();
+        return new String(c);
     }
 }
