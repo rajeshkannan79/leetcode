@@ -16,6 +16,7 @@ class Solution {
             if (!rankMap.containsKey(nums)) {
                 rankMap.put(nums, rank++);
             }
+            
         }
 
         int[] result = new int[arr.length];
