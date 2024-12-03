@@ -4,11 +4,11 @@ class Solution {
         {
             if(i%2==0)
             {
-                sum=sum+num.charAt(i)-'0';
+                sum=sum+num.charAt(i)-48;
             }
             else
             {
-                sum1=sum1+num.charAt(i)-'0';
+                sum1=sum1+num.charAt(i)-48;
             }
         }
         if(sum==sum1)return true;
