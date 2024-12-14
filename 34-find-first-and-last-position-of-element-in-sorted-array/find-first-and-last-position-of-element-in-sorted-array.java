@@ -1,13 +1,14 @@
 class Solution {
     public int[] searchRange(int[] nums, int target) { 
         int arr[]=new int[2];
-        int x=-1;
-        int y=-1;
+        arr[0]=-1;
+        arr[1]=-1;
+          
         for(int i=0;i<nums.length;i++)
         {
             if(nums[i]==target)
             {
-                x=i;
+               arr[0]=i;
                 break;
             }
         }
@@ -15,12 +16,11 @@ class Solution {
         {
             if(nums[i]==target)
             {
-                y=i;
+               arr[1]=i;
                 break;
             }
         }
-        arr[0]=x;
-        arr[1]=y;
+       
         return arr;
     }
 }
