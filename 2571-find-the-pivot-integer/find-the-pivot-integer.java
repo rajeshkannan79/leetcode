@@ -1,6 +1,6 @@
 class Solution {
     public int pivotInteger(int n) {
-       int arr[]=new int[n+1];int o=0;
+       int arr[]=new int[n];int o=0;
        for(int i=1;i<=n;i++)
        {
         arr[o++]=i;
