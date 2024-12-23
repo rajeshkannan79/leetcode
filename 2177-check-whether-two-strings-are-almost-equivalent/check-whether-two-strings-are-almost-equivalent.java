@@ -12,7 +12,7 @@ class Solution {
            
        
       for (int count : hm.values()) {
-            if (Math.abs(count) > 3||count<-3) {
+            if (Math.abs(count) > 3 ) {
                 return false;
             }
         }
