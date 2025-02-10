@@ -1,6 +1,6 @@
 class Solution {
     public boolean isPerfectSquare(int num) {
-        int n=(int)Math.pow(num,0.5);
+        int n=(int)Math.sqrt(num);
        return n*n==num;
     }
 }
